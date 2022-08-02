@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Landing Page</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header id="header">
-            <div class="header container out"></div>
-            <div id="header_container">
-                <div class="header logo"><img class= "header image" src="./images/Logo.webp" alt="Logo image webmp"></div>
-                <div class="header link one"><a href="#">Home</a></div>
-                <div class="header link two"><a href="#">Business</a></div>
-                <div class="header link three"><a href="#">About</a></div>
-            </div>
-            <div class="header container out"></div>
-        </header>
-        <section id="section">
-        <div class="section-div-out"></div>
-          <div id="section-main-div">
-            <div id="section-div-left">
-                <h1 id="div_left_h1">Here I sit beneath a tree</h1>
-                <p id="div_left_p">Heartbeat calm.  Soul hums free</p>
-                    <div id="enclose-button">
-                        <button id="div_left_button">Sign up
-                        </button>
-                        <div id="reduce-button-size"></div>
-                    </div>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <p class="header-logo">Header Logo</p>
+            <ul>
+                <li><a href="#">header link one</a></li>
+                <li><a href="#">header link two</a></li>
+                <li><a href="#">header link three</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <div>
+                <p class="header-main">This website is awesome</p>
+                <p class="text">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+                <button class="sign-up">Sign up</button>
             </div>
             
-            <div id="section-div-right">
-                <img class="section image" src="./images/tree.webp" alt="section div right image">
+            <div>
+                <img src="./images/tree.webp" alt="tree-image">
             </div>
-          </div>
-          <div class="section-div-out" id="div-section-right"></div>
-          
-        </section>
-        
-        <footer id="footer">
+            
+        </div>
+    </header>
+    <section class="boxes">
+        <div class="container">
+            <p class="header-boxes"></p>
+            <div class="box">
+                <img src="" alt="image one">
+                <p class="image-subtext">this is some subtext under an illustration or image</p>
+            </div>
+            <div class="box">
+                <img src="" alt="image one">
+                <p class="image-subtext">this is some subtext under an illustration or image</p>
+            </div>
+            <div class="box">
+                <img src="" alt="image one">
+                <p class="image-subtext">this is some subtext under an illustration or image</p>
+            </div>
+            <div class="box">
+                <img src="" alt="image one">
+                <p class="image-subtext">this is some subtext under an illustration or image</p>
+            </div>
 
-        </footer>
-        
-    </body>
+        </div>
+    </section>
+    <section class="quote">
+        <div class="container">
+            <p class="quote-subtext"> This is an inspiring quote, or a testimonial from a customer.
+                Maybe it's just filling up space, or maybe people will actually read it.
+                Who knows? All I know is that it looks nice.
+            </p>
+            <p class="quote-subtext-2">
+                -Thor, God of Thunder
+            </p>
+        </div>
+    </section>
+    <section class="ad">
+        <div class="container">
+            <p class="ad-text">Call to action it's time!<br> Sign up for our product by clicking that button right over there!</p>
+            <button class="ad-button">Sign up</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Copyright c The Odin Project 2021</p>
+        </div>
+    </footer>
+</body>
 </html>
