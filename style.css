@@ -12,6 +12,10 @@ body {
     line-height: 1.5;
 }
 
+img {
+    max-width: 100%;
+}
+
 .navbar {
     height: 50px;
     background-color: #1f2937;
@@ -31,6 +35,10 @@ body {
     margin: 0 auto;
 }
 
+nav p {
+    font-weight: bold;
+}
+
 .navbar .container ul {
     display: flex;
     list-style-type: none;
@@ -48,10 +56,14 @@ body {
     
 }
 
-img {
-    height: auto;
-    width: 225px;
+.navbar a:hover {
+    color: #3882f6;
 }
+
+.header img {
+    max-width: 400px;
+}
+
 
 .header {
     height: 300px;
@@ -61,15 +73,37 @@ img {
 
 .header .container {
     display: flex;
-    flex-direction: row;
+    
     height: 100%;
     align-items: center;
     justify-content: space-between;
     width: 1000px;
     margin: 0 auto;
+    
+}
+
+.header button {
+    background-color: #3882f6;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 18px;
+    font-weight: bold;
+    margin-top: 8px;
 }
 
 .header-main {
     font-size: 48px;
+    font-weight: bolder;
 }
 
+
+
+
+@media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+      align-items: center;
+    }
+}
